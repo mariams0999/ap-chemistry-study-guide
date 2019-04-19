@@ -1,0 +1,41 @@
+head,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+
+    background: linear-gradient( rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)),
+        url('img/chemistry.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: table;
+    padding-bottom: 450px;
+}
+
+.text-vertical-center {
+    text-align: center;
+    color: white;
+}
+
+#title {
+    font-size: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 250px;
+}
+
+#subtitle {
+    font-size: 30px;
+}
+
+#bs-example-navbar-collapse-1 > ul > li.nav-item > a {
+    color: white;
+}
+
+body > nav > div.container-fluid > div.navbar-header > span {
+    color:white;
+}
