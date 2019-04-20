@@ -39,3 +39,46 @@ nav {
 body > nav > div.container-fluid > div.navbar-header > span {
     color:white;
 }
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding: 10px 60px;
+}
+
+.circle {
+      height: 150px;
+      width: 150px;
+      background-color: white;
+      border-radius: 50%;
+      display: inline-block;
+      padding: 6px;
+      margin-bottom: 80px;
+      margin-left: 80px;
+      margin-right: 40px;
+      text-align: center;
+      box-shadow: 6px 6px gray;
+      transition: transform 2s opacity 2s;
+      transition-timing-function: ease-in-out;
+}
+
+h3 {
+      margin: 55px auto;
+      opacity: 1;
+      transition: opacity 0.1s;
+}
+
+.circle:hover {
+      transform: scale(1.6, 1.6);
+}
+    
+.circle:hover h3 {
+      opacity: 0;
+}
+
+.circle:hover p {
+      opacity: 1;
+}
