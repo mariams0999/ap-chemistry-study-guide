@@ -57,21 +57,10 @@ p {
       box-shadow: 6px 6px gray;
       margin: 30px;
       padding: 40px 0px;
-      transition: opacity 2s;
-      transition-timing-function: ease-in-out;
 }
 
 h3 {
       margin: 55px auto;
-      opacity: 1;
-      transition: opacity 0.1s;
-}
-    
-.sq:hover h3 {
-      opacity: 0;
-}
-
-.sq:hover p {
       opacity: 1;
 }
 

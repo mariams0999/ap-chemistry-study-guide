@@ -18,6 +18,17 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+<script>
+    $(function() {
+        $('.sq').hover(function() {
+                $(this, 'h3').css('opacity', '0');
+            },
+            function() {
+                $(this, 'h3').html('Big Idea');
+            }
+        );
+    });
+</script>
 
 <body>
     <nav class="navbar navbar-default">
