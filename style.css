@@ -60,11 +60,14 @@ h3 {
     color: white;
 }
 
-.col-md-4 {
-    margin: 0px;
+.col-md-3 {
+    margin: 50px;
 }
 
 .bi {
     padding: 0px;
 }
 
+img {
+    text-align: center;
+}
