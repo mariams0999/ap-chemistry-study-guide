@@ -38,6 +38,10 @@ body > nav > div.container-fluid > div.navbar-header > span {
     color:white;
 }
 
+#bs-example-navbar-collapse-1 > ul > li.dropdown > a {
+    color: white;
+}
+
 h1 {
     text-align: center;
 }
@@ -62,6 +66,7 @@ h3 {
 
 .col-md-3 {
     margin: 50px;
+    height: 600px;
 }
 
 .bi {
@@ -70,4 +75,25 @@ h3 {
 
 img {
     text-align: center;
+}
+
+table {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.color-align {
+    color: #1791D6;
+}
+
+h4 {
+    font-size: 25px;
+    margin-left: 20px;
 }
