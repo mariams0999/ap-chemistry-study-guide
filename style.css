@@ -97,3 +97,38 @@ h4 {
     font-size: 25px;
     margin-left: 20px;
 }
+#Boyle{
+    margin-left:10px;
+}
+#Charles{
+    margin-left:10px;
+}
+#Avogadro{
+    margin-left:10px;
+}
+#Gay-Lussac{
+    margin-left:10px;
+}
+#Ideal-1{
+    margin-left:10px;
+    width:400px;
+    height:300px;
+}
+#Ideal-2{
+    margin-left:10px;
+    width:400px;
+    height:300px;
+}
+#Mole-1{
+    margin-left:10px;
+    width:400px;
+    height:300px;
+}
+#Mole-2{
+    margin-left:10px;
+    width:400px;
+    height:300px;
+}
+#Electrolysis{
+    background-color:white;
+}
