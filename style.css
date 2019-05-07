@@ -38,6 +38,10 @@ body > nav > div.container-fluid > div.navbar-header > span {
     color:white;
 }
 
+#bs-example-navbar-collapse-1 > ul > li.dropdown > a {
+    color: white;
+}
+
 h1 {
     text-align: center;
 }
@@ -50,18 +54,9 @@ p {
     text-align: center;
 }
 
-/*.sq {
-      background-color: white;
-      display: inline-block;
-      text-align: center;
-      box-shadow: 6px 6px gray;
-      margin: 30px;
-      padding: 40px 0px;
-} */
-
 h3 {
       margin: 55px auto;
-      opacity: 1;
+      text-align: center;
 }
 
 #contact {
@@ -70,10 +65,35 @@ h3 {
 }
 
 .col-md-3 {
-    margin: 10px;
+    margin: 50px;
+    height: 600px;
 }
 
 .bi {
-    margin: 0px;
+    padding: 0px;
 }
 
+img {
+    text-align: center;
+}
+
+table {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.color-align {
+    color: #1791D6;
+}
+
+h4 {
+    font-size: 25px;
+    margin-left: 20px;
+}
