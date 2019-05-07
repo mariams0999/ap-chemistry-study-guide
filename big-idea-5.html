@@ -17,6 +17,18 @@
     <!--custom-->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script>
+      $(function() {
+          $('img').mouseover(
+            function(){
+             $(this).show(1000);
+          $('img').mouseout(
+              function(){
+               $(this).hide(1000);
+              });
+            });
+      });
+    </script>
 </head>
 <body>
     <div class="text-center">

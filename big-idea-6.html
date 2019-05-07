@@ -17,6 +17,19 @@
     <!--custom-->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script>
+      <script>
+      $(function() {
+          $('img').mouseover(
+            function(){
+             $(this).show(1000);
+          $('img').mouseout(
+              function(){
+               $(this).hide(1000);
+              });
+            });
+      });
+    </script>
 </head>
 <body>
     <div class="text-center">
@@ -41,6 +54,7 @@
           <li> Buffers are solutions that maintain a constant pH. It has to have a weak acid with its conjugate base or a weak base with its conjugate acid. </li>
           <li> The equivalence point is when the moles of the titrant is equal to the moles of the titrate. It is when titration is complete. </li>
         <h2 class="text-center">Titration</h2>
+        <img id="img" src="img/bi6-images/Titration.jpg" class="img-thumbnail">
           <li> A titration of a strong acid with a strong base would have an equivalence point at a pH of 7. </li>
           <li> A titration of a strong acid with a weak base would have an equivalence point at a pH less than 7. </li>
           <li> A titration of a weak acid with a strong base would have an equivalence point at a pH higher than 7. </li>

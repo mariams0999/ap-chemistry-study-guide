@@ -17,6 +17,18 @@
     <!--custom-->
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script>
+      $(function() {
+          $('img').mouseover(
+            function(){
+             $(this).show(1000);
+          $('img').mouseout(
+              function(){
+               $(this).hide(1000);
+              });
+            });
+      });
+    </script>
 </head>
 
 <body>
@@ -90,11 +102,11 @@
             </tbody>
         </table><br>
 
-        <img src="img/bi1-images/pen.jpg" class="img-thumbnail" style="float: right;" style="display: inline-block;">
+        <img id="img" src="img/bi1-images/pen.jpg" class="img-thumbnail" style="float: right;" style="display: inline-block;">
 
 
         <h2 class="text-center">Electron Configurations</h2>
-        <img src="img/bi1-images/periodictable2.jpg" class="img-thumbnail" alt="periodic table with S,P,D,F shells" style="float: right;" style="display: inline-block;">
+        <img id="img" src="img/bi1-images/periodictable2.jpg" class="img-thumbnail" style="float: right;" style="display: inline-block;">
         <ul>
             <li> Each s shell has room for one orbital with two electrons.</li>
             <li> Each p shell has room for three orbitals with six electrons.</li>
@@ -108,7 +120,7 @@
         </ul>
         <h2 class="text-center">Periodic Trends</h2>
 
-        <img src="img/bi1-images/ionization-energy.jpg" style="float: right;" style="display: inline-block;">
+        <img id="img" src="img/bi1-images/ionization-energy.jpg" style="float: right;" style="display: inline-block;">
 
         <h4>Ionization Energy</h4>
         <ul>
