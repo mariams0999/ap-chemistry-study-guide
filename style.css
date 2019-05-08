@@ -97,10 +97,6 @@ h4 {
     font-size: 25px;
     margin-left: 20px;
 } 
-#img{
-    margin-left:30px;
-    background-color: white;
-}
 
 #nav-bi1 {
     background: linear-gradient( rgba(0, 0, 0, 0.5),
@@ -111,3 +107,54 @@ h4 {
     height: 100%;
     padding-bottom: 450px;
 }
+
+#nav-bi2 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)),
+        url('img/bi2.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 450px;
+}
+
+#nav-bi3 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)),
+        url('img/bi3.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 450px;
+}
+
+#nav-bi4 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)),
+        url('img/bi4.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 450px;
+}
+
+#nav-bi5 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)),
+        url('img/bi5.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 450px;
+}
+
+#nav-bi6 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)),
+        url('img/bi6.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 450px;
+}
+
