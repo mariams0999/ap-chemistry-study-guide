@@ -15,53 +15,49 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <!--custom-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.3.css">
     <script src="script.js"></script>
     <script>
-      $(function() {
-          $('img').mouseover(
-            function(){
-             $(this).show(1000);
-          $('img').mouseout(
-              function(){
-               $(this).hide(1000);
-              });
+        $(function() {
+            $('img').click(function() {
+                $(this).css("opacity", "0");
             });
-      });
+            $('img').dblclick(function() {
+                $(this).css("opacity", "1");
+            });
+        });
     </script>
 </head>
+
 <body>
     <div>
-      <h1 class="text-center"> Study Guide: Big Idea 3 </h1> 
+        <h1 class="text-center"> Study Guide: Big Idea 3 </h1>
     </div>
-    
+
     <div>
-          <li> Net ionic equations should have only the ions that precipitate or react during a reaction. There should be no spectator ions, an ion that exists in the same form on both sides of the equation, in a net ionic equation.</li>
-         <h2 class="text-center;">Souble vs Insouble</h2>
-         <img id="img" src= "img/bi3-images/Ins-vs-s.jpg" class="img-thumbnail">
-         <li> Group 1 ions, ammonium, and nitrate are always soluble.</li>
-         <h2 class="text-center">Percent Yeild</h2>
-         <img id="img" src="img/bi3-images/percent.jpg" class="img-thumbnail" style="float: right;">
-         <li> It is a yield of products which tends to be less than a hundred percent. This shows that the reactants aren’t pure.</li>
-         <h2 class=" text-center;"> Redox Reactions</h2>
-         <ul>
-         <img id="img" src="img/bi3-images/LEO-GER.jpg" class="img-thumbnail">
-         <li> Redox Reactions are reactions that contain oxidation and reduction half-reactions in them.</li>
-         <li> Oxidation half-reactions are written with the electrons placed at the product side.</li>
-         <li> Reduction half-reactions are written with the electrons placed at the reactant side.</li>
-         <li> Species that appear at the top of the series in your Electrode Potential table gain electrons most readily and therefore have the most positive E values. They are easily reduced and are the best oxidizing agent.</li>
-         <li> Species that appear at the bottom of the series in your Electrode Potential table lose electrons most readily and therefore have the most negative E values. They are easily oxidized and are the best reducing agent.</li>
-         </ul>
-         <h2 class="text-center">Electrochemical Cells</h2>
-         <ul>
-             <li> Voltaic cells are spontaneous which means that the voltage of the cells must be negative. 
-             <img id="img" src= "img/bi3-images/Voltaic-cells.jpg" class="img-thumnail">
-             <li> Electrolysis are nonspontaneous and require a battery to work as a form of energy to force a reaction to happen.
-             <img id="img" src= "img/bi3-images/Electrolysis.jpg" class="img-thumnail">
-             <li> All electrochemical cells need a salt bridge to maintain neutrality.</li>
-             <li> Anode is where the oxidation half-reaction takes place.<li>
-             <li> Cathode is where the reduction half-reaction takes place.</li>
-         </ul>     
+        <li> Net ionic equations should have only the ions that precipitate or react during a reaction. There should be no spectator ions, an ion that exists in the same form on both sides of the equation, in a net ionic equation.</li>
+        <h2 class="text-center;">Souble vs Insouble</h2>
+        <img src="img/bi3-images/Ins-vs-s.jpg" class="img-thumbnail">
+        <li> Group 1 ions, ammonium, and nitrate are always soluble.</li>
+        <h2 class="text-center">Percent Yeild</h2>
+        <img src="img/bi3-images/percent.jpg" class="img-thumbnail" style="float: right;">
+        <li> It is a yield of products which tends to be less than a hundred percent. This shows that the reactants aren’t pure.</li>
+        <h2 class=" text-center;"> Redox Reactions</h2>
+        <img src="img/bi3-images/LEO-GER.jpg" class="img-thumbnail">
+        <li> Redox Reactions are reactions that contain oxidation and reduction half-reactions in them.</li>
+        <li> Oxidation half-reactions are written with the electrons placed at the product side.</li>
+        <li> Reduction half-reactions are written with the electrons placed at the reactant side.</li>
+        <li> Species that appear at the top of the series in your Electrode Potential table gain electrons most readily and therefore have the most positive E values. They are easily reduced and are the best oxidizing agent.</li>
+        <li> Species that appear at the bottom of the series in your Electrode Potential table lose electrons most readily and therefore have the most negative E values. They are easily oxidized and are the best reducing agent.</li>
+        <h2 class="text-center">Electrochemical Cells</h2>
+        <li> Voltaic cells are spontaneous which means that the voltage of the cells must be negative.
+            <img src="img/bi3-images/Voltaic-cells.jpg" class="img-thumnail">
+            <li> Electrolysis are nonspontaneous and require a battery to work as a form of energy to force a reaction to happen.
+                <img id="Electrolysis" src="img/bi3-images/Electrolysis.jpg" class="img-thumnail">
+                <li> All electrochemical cells need a salt bridge to maintain neutrality.</li>
+                <li> Anode is where the oxidation half-reaction takes place.
+                    <li>
+                        <li> Cathode is where the reduction half-reaction takes place.</li>
     </div>
-     
+
 </body>

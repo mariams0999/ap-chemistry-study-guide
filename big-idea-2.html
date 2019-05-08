@@ -18,33 +18,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script>
-      <script>
-      $(function() {
-          $('img').mouseover(
-            function(){
-             $(this).show(1000);
-          $('img').mouseout(
-              function(){
-               $(this).hide(1000);
-              });
+        $(function() {
+            $('img').click(function() {
+                $(this).css("opacity", "0");
             });
-      });
+            $('img').dblclick(function() {
+                $(this).css("opacity", "1");
+            });
+        });
     </script>
 </head>
+
 <body>
     <div>
-      <h1 class="text-center"> Study Guide: Big Idea 2 </h1> 
+        <h1 class="text-center"> Study Guide: Big Idea 2 </h1>
     </div>
     <div>
         <h2 class=> Gas Laws</h2>
         <h3>Boyles's Law</h3>
         <ul>
-          <img id="img" src="img/bi2-images/boyleslawformula.jpg" class="img-thumbnail" width="400" height="100">
-        <li> Boyle’s Law: at constant temperature, pressure is inversely proportional to volume. </li>
+            <img id="img" src="img/bi2-images/boyleslawformula.jpg" class="img-thumbnail" width="400" height="100">
+            <li> Boyle’s Law: at constant temperature, pressure is inversely proportional to volume. </li>
         </ul>
         <h3>Charles' Law</h3>
         <ul>
-            <img id="img" src="img/bi2-images/charleslawformula.jpg" class="img-thumbnail" width="400" height="100"> 
+            <img id="img" src="img/bi2-images/charleslawformula.jpg" class="img-thumbnail" width="400" height="100">
             <li> Charles’ Law: at constant pressure, volume is directly proportional to temperature. </Li>
         </ul>
         <h3>Avogadro’s Law</h3>
@@ -65,7 +63,7 @@
         <h2 class="text-center"> Dalton’s Law of Partial Pressure</h2>
         <h2 class="text-center"> Mole Fraction</h2>
         <img id="img" src="img/bi2-images/Mole-fraction.jpg" class="img-thumbnail">
-        <img id="img" src= "img/bi2-images/mole-fraction-equation.jpg" class="img-thumbnail">
+        <img id="img" src="img/bi2-images/mole-fraction-equation.jpg" class="img-thumbnail">
         <h2 class="text-center"> Drawing Lewis Structures</h2>
         <ul>
             <li> The least electronegative atom is placed in the middle.</li>
@@ -74,12 +72,13 @@
             <li> The negative formal charge should go to the most electronegative atom. </li>
         </ul>
         <h2 class="text-center">Hybridization</h2>
-           <ul>
-               <li> It occurs when atomic bonds used electrons rom both the s and p orbitals, creating an imbalance in the energy levels of the electrons. To imbalance the energy levels, the s and p orbitals involved are combined to create hybrid orbitals.</li>
-               <li> There are three hybrid orbitals you need to know about: sp, sp2, and sp3. To figure out which hybrid orbital represent a certain atom, count how many electron clouds the atom has. The amount of electron clouds should be equal to the number of exponents of the s and the p.</li>
-           </ul>   
+        <ul>
+            <li> It occurs when atomic bonds used electrons rom both the s and p orbitals, creating an imbalance in the energy levels of the electrons. To imbalance the energy levels, the s and p orbitals involved are combined to create hybrid orbitals.</li>
+            <li> There are three hybrid orbitals you need to know about: sp, sp2, and sp3. To figure out which hybrid orbital represent a certain atom, count how many electron clouds the atom has. The amount of electron clouds should be equal to the number
+                of exponents of the s and the p.</li>
+        </ul>
         <h2 class="text-center">Bonding Flowchart</h2>
-        
+
     </div>
-     
+
 </body>

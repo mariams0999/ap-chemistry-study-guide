@@ -18,16 +18,14 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script>
-      $(function() {
-          $('img').mouseover(
-            function(){
-             $(this).show(1000);
-          $('img').mouseout(
-              function(){
-               $(this).hide(1000);
-              });
+        $(function() {
+            $('img').click(function() {
+                $(this).css("opacity", "0");
             });
-      });
+            $('img').dblclick(function() {
+                $(this).css("opacity", "1");
+            });
+        });
     </script>
 </head>
 
