@@ -74,11 +74,13 @@ h3 {
 }
 
 img {
-    text-align: center;
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
 }
 
 table {
-    margin: 20px;
+    margin: 50px;
 }
 
 h2 {
@@ -95,8 +97,13 @@ h2 {
 
 h4 {
     font-size: 25px;
-    margin-left: 20px;
+    margin-left: 50px;
 } 
+
+li {
+    margin-left: 40px;
+    margin-right: 50px;
+}
 
 #nav-bi1 {
     background: linear-gradient( rgba(0, 0, 0, 0.5),
