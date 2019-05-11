@@ -165,3 +165,11 @@ li {
     padding-bottom: 400px;
 }
 
+button {
+    margin: 20px;
+}
+
+label {
+    margin-left: 20px;
+}
+
