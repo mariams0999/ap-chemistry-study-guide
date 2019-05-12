@@ -18,9 +18,13 @@
     <link rel="stylesheet" href="style.css">
     <!-- <script src="script.js"></script> -->
 </head>
+
 <script>
     $(function() {
-
+        $('#check').click(function() {
+            $('.correct').css('color', 'green');
+            $('.wrong').css('color', 'red')
+        });
     });
 </script>
 
@@ -63,8 +67,9 @@
     </nav>
 
     <div class="tool">
-        <h2 class="text-center">Take the time to test yourself to get that 5 on the AP Exam</h2>
+        <h2 class="text-center">Take the time to test yourself to get that 5 on the AP Exam</h2> <br><br>
         <form role="form">
+            <h2 class="text-center">Short Answer</h2>
             <div class="form-group">
                 <label>Write the electron configuration of Phosphorous</label>
                 <input id="" type="text" class="form-control">
@@ -73,7 +78,7 @@
                     <p>Answer: 1s2 2s2 2p6 3s2 3p3 <br> or Shorter Answer: [Ne] 3s2 3p3 <br> Look back to Big Idea 1 and look at the periodic table image.</p>
                 </div>
             </div> <br>
-            
+
             <div class="form-group">
                 <label>What is ionization energy?</label>
                 <input type="text" class="form-control">
@@ -82,7 +87,7 @@
                     <p>Answer: Ionization energy is the energy required to remove an electron from an atom.</p>
                 </div>
             </div> <br>
-            
+
             <div class="form-group">
                 <label>write the rate law of this reaction?</label><br>
                 <label>2 NO + O2 → 2 NO2 (fast)<br> 2 NO2 ⇌ N2O4 (slow)</label>
@@ -93,17 +98,28 @@
                         the steps listed above. To write the rate law, refer to the reactants of the step before the slow one. Also, don't forget exponents.</p>
                 </div>
             </div> <br>
+
+            <div class="form-group">
+                <label>What is the hybridization of the carbon atom in methane (CH4)?</label> <br>
+                <input type="text" class="form-control">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#answer4">View Answer</button>
+                <div id="answer4" class="collapse">
+                    <p>Answer: sp3 <br> There are 4 electron groups around the carbon atom in mathane, so if you count the exponents in sp3 and add them, you would get 4.</p>
+                </div>
+            </div> <br>
+            <h2 class="text-center">Multiple Choice</h2>
+            <div class="form-group">
+                <label>How many orbitals and electrons are there in the s shell?</label>
+                <input type="radio" name="shell" value="1-2"> <label class="correct">1 orbital with 2 electrons</label>
+                <input type="radio" name="shell" value="2-2"> <label class="wrong">2 orbitals with 2 electrons</label>
+                <input type="radio" name="shell" value="2-4"> <label class="wrong">2 orbitals with 4 electrons</label>
+                <input type="radio" name="shell" value="1-4"> <label class="wrong">1 orbital with 4 electrons</label> <br><br>
+            </div>
             
-                <div class="form-group">
-                    <label>What is the hybridization of the carbon atom in methane (CH4)?</label> <br>
-                    <input type="text" class="form-control">
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#answer4">View Answer</button>
-                    <div id="answer4" class="collapse">
-                        <p>Answer: sp3 <br> There are 4 electron groups around the carbon atom in mathane, so if you count the exponents in sp3 and add them, you would get 4.</p>
-                    </div>
-                </div> <br>
+            
         </form>
-        </div>
+        <button id="check" class="btn btn-info">Check Answers</button>
+    </div>
 </body>
 
 </html>

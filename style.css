@@ -173,3 +173,7 @@ label {
     margin-left: 20px;
 }
 
+input {
+    display: block;
+    margin-left: 15px;
+}
