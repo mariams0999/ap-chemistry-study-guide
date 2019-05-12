@@ -29,7 +29,7 @@
 </script>
 
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id="test">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -64,7 +64,7 @@
             <h1 id="title">Test Yourself</h1>
             <h2 id="subtitle">Do you think you know all the content by now?</h2>
         </div>
-    </nav>
+    </nav><br><br>
 
     <div class="tool">
         <h2 class="text-center">Take the time to test yourself to get that 5 on the AP Exam</h2> <br><br>
@@ -72,7 +72,7 @@
             <h2 class="text-center">Short Answer</h2>
             <div class="form-group">
                 <label>Write the electron configuration of Phosphorous</label>
-                <input id="" type="text" class="form-control">
+                <input type="text" class="form-control">
                 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#answer1">View Answer</button>
                 <div id="answer1" class="collapse">
                     <p>Answer: 1s2 2s2 2p6 3s2 3p3 <br> or Shorter Answer: [Ne] 3s2 3p3 <br> Look back to Big Idea 1 and look at the periodic table image.</p>
@@ -115,10 +115,48 @@
                 <input type="radio" name="shell" value="2-4"> <label class="wrong">2 orbitals with 4 electrons</label>
                 <input type="radio" name="shell" value="1-4"> <label class="wrong">1 orbital with 4 electrons</label> <br><br>
             </div>
+            <div class="form-group">
+                <label>What is the relationship between pressure and volume?</label>
+                <input type="radio" name="relationship" value="direct"> <label class="wrong">Pressure is directly proportional to volume.</label>
+                <input type="radio" name="relationship" value="twice"> <label class="wrong">Pressure is twice the volume.</label>
+                <input type="radio" name="relationship" value="inverse"> <label class="correct">Pressue is inversely proportional to volume.</label>
+                <input type="radio" name="relationship" value="none"> <label class="wrong">There's no relationship between pressure and volume.</label> <br><br>
+            </div>
             
+            <div class="form-group">
+                <label>What can you do to increase the rate of the reaction?</label>
+                <input type="radio" name="rate" value="surface-area"> <label class="wrong">Lower the surface area by cutting a solid into pieces</label>
+                <input type="radio" name="rate" value="temperature"> <label class="wrong">Increase the temperature</label>
+                <input type="radio" name="rate" value="concentration"><label class="wrong">Increase the concentration of the reactants</label>
+                <input type="radio" name="rate" value="all"> <label class="correct">All of the above</label> <br><br>
+            </div>
             
+            <div class="form-group">
+                <label>Where does the oxidation half-reaction take place?</label>
+                <input type="radio" name="oxidation" value="cathode"> <label class="wrong">Cathode</label>
+                <input type="radio" name="oxidation" value="anode"> <label class="correct">Anode</label>
+                <input type="radio" name="oxidation"><label class="wrong">Salt bridge</label>
+                <input type="radio" name="oxidation" value="nowhere"> <label class="wrong">nowhere</label> <br><br>
+            </div>
+            
+            <div class="form-group">
+                <label>Which reaction shows an increase in entropy?</label>
+                <input type="radio" name="entropy" value="more-gases"> <label class="correct">N2O4 (g) --> 2 NO2 (g)</label>
+                <input type="radio" name="entropy" value="freezing"> <label class="wrong">H2O (l) --> H2O (s)</label>
+                <input type="radio" name="entropy" value="percipitation"><label class="wrong">Pb 2+ (aq) + SO4 2- (aq) --> PbSO4 (s)</label>
+                <input type="radio" name="entropy" value="all"> <label class="wrong">All of the above</label> <br><br>
+            </div>
+            
+            <div class="form-group">
+                <label>When does a reaction reach equilibrium?</label>
+                <input type="radio" name="equilibrium" value="equal"> <label class="wrong">When the concentrations of the products and the reactants are equal</label>
+                <input type="radio" name="equilibrium" value="constant"> <label class="correct">When the concentrations of the products and the reactants are constant</label>
+                <input type="radio" name="equilibrium" value="twice"><label class="wrong">When the concentrations of the reactants are twice the concentrations of the products</label>
+                <input type="radio" name="equilibrium" value="none"><label class="wrong">None of the above</label> <br><br>
+            </div>
+
         </form>
-        <button id="check" class="btn btn-info">Check Answers</button>
+        <button id="check" class="btn btn-info">Check Answers</button> <br><br>
     </div>
 </body>
 
