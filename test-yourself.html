@@ -18,14 +18,18 @@
     <link rel="stylesheet" href="style.css">
     <!-- <script src="script.js"></script> -->
 </head>
+
 <script>
     $(function() {
-
+        $('#check').click(function() {
+            $('.correct').css('color', 'green');
+            $('.wrong').css('color', 'red')
+        });
     });
 </script>
 
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" id="test">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -38,9 +42,9 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item col-sm-3"><a href="#home">Home</a></li>
-                    <li class="nav-item col-sm-3"><a href="#overview">Overview</a></li>
-                    <li class="nav-item col-sm-3"><a href="#contact">Contact</a></li>
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="index.html">Overview</a></li>
+                    <li class="nav-item"><a href="index.html">Contacts</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">Big Ideas <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -60,29 +64,99 @@
             <h1 id="title">Test Yourself</h1>
             <h2 id="subtitle">Do you think you know all the content by now?</h2>
         </div>
-    </nav>
+    </nav><br><br>
 
     <div class="tool">
-        <h2>Create a meme</h2>
+        <h2 class="text-center">Take the time to test yourself to get that 5 on the AP Exam</h2> <br><br>
         <form role="form">
+            <h2 class="text-center">Short Answer</h2>
             <div class="form-group">
-                <label>Write the electron cnfiguration of Phosphorous</label>
+                <label>Write the electron configuration of Phosphorous</label>
                 <input type="text" class="form-control">
-            </div>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#answer1">View Answer</button>
+                <div id="answer1" class="collapse">
+                    <p>Answer: 1s2 2s2 2p6 3s2 3p3 <br> or Shorter Answer: [Ne] 3s2 3p3 <br> Look back to Big Idea 1 and look at the periodic table image.</p>
+                </div>
+            </div> <br>
+
             <div class="form-group">
                 <label>What is ionization energy?</label>
                 <input type="text" class="form-control">
-            </div>
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#answer2">View Answer</button>
+                <div id="answer2" class="collapse">
+                    <p>Answer: Ionization energy is the energy required to remove an electron from an atom.</p>
+                </div>
+            </div> <br>
+
             <div class="form-group">
                 <label>write the rate law of this reaction?</label><br>
                 <label>2 NO + O2 → 2 NO2 (fast)<br> 2 NO2 ⇌ N2O4 (slow)</label>
                 <input type="text" class="form-control">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#answer3">View Answer</button>
+                <div id="answer3" class="collapse">
+                    <p>Answer: rate= k[NO]^2 [O2] <br>Look back at big idea 4 and review rate laws. Remember that intermediates aren't included in rate laws. In this case, NO2 is an intermediate because it appeared as a product and then as a reactant in
+                        the steps listed above. To write the rate law, refer to the reactants of the step before the slow one. Also, don't forget exponents.</p>
+                </div>
+            </div> <br>
+
+            <div class="form-group">
+                <label>What is the hybridization of the carbon atom in methane (CH4)?</label> <br>
+                <input type="text" class="form-control">
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#answer4">View Answer</button>
+                <div id="answer4" class="collapse">
+                    <p>Answer: sp3 <br> There are 4 electron groups around the carbon atom in mathane, so if you count the exponents in sp3 and add them, you would get 4.</p>
+                </div>
+            </div> <br>
+            <h2 class="text-center">Multiple Choice</h2>
+            <div class="form-group">
+                <label>How many orbitals and electrons are there in the s shell?</label>
+                <input type="radio" name="shell" value="1-2"> <label class="correct">1 orbital with 2 electrons</label>
+                <input type="radio" name="shell" value="2-2"> <label class="wrong">2 orbitals with 2 electrons</label>
+                <input type="radio" name="shell" value="2-4"> <label class="wrong">2 orbitals with 4 electrons</label>
+                <input type="radio" name="shell" value="1-4"> <label class="wrong">1 orbital with 4 electrons</label> <br><br>
             </div>
             <div class="form-group">
-                <label>What is the hybridization of carbon in methane (CH4)?</label> <br>
-                <input type="text" class="form-control">
+                <label>What is the relationship between pressure and volume?</label>
+                <input type="radio" name="relationship" value="direct"> <label class="wrong">Pressure is directly proportional to volume.</label>
+                <input type="radio" name="relationship" value="twice"> <label class="wrong">Pressure is twice the volume.</label>
+                <input type="radio" name="relationship" value="inverse"> <label class="correct">Pressue is inversely proportional to volume.</label>
+                <input type="radio" name="relationship" value="none"> <label class="wrong">There's no relationship between pressure and volume.</label> <br><br>
             </div>
+            
+            <div class="form-group">
+                <label>What can you do to increase the rate of the reaction?</label>
+                <input type="radio" name="rate" value="surface-area"> <label class="wrong">Lower the surface area by cutting a solid into pieces</label>
+                <input type="radio" name="rate" value="temperature"> <label class="wrong">Increase the temperature</label>
+                <input type="radio" name="rate" value="concentration"><label class="wrong">Increase the concentration of the reactants</label>
+                <input type="radio" name="rate" value="all"> <label class="correct">All of the above</label> <br><br>
+            </div>
+            
+            <div class="form-group">
+                <label>Where does the oxidation half-reaction take place?</label>
+                <input type="radio" name="oxidation" value="cathode"> <label class="wrong">Cathode</label>
+                <input type="radio" name="oxidation" value="anode"> <label class="correct">Anode</label>
+                <input type="radio" name="oxidation"><label class="wrong">Salt bridge</label>
+                <input type="radio" name="oxidation" value="nowhere"> <label class="wrong">nowhere</label> <br><br>
+            </div>
+            
+            <div class="form-group">
+                <label>Which reaction shows an increase in entropy?</label>
+                <input type="radio" name="entropy" value="more-gases"> <label class="correct">N2O4 (g) --> 2 NO2 (g)</label>
+                <input type="radio" name="entropy" value="freezing"> <label class="wrong">H2O (l) --> H2O (s)</label>
+                <input type="radio" name="entropy" value="percipitation"><label class="wrong">Pb 2+ (aq) + SO4 2- (aq) --> PbSO4 (s)</label>
+                <input type="radio" name="entropy" value="all"> <label class="wrong">All of the above</label> <br><br>
+            </div>
+            
+            <div class="form-group">
+                <label>When does a reaction reach equilibrium?</label>
+                <input type="radio" name="equilibrium" value="equal"> <label class="wrong">When the concentrations of the products and the reactants are equal</label>
+                <input type="radio" name="equilibrium" value="constant"> <label class="correct">When the concentrations of the products and the reactants are constant</label>
+                <input type="radio" name="equilibrium" value="twice"><label class="wrong">When the concentrations of the reactants are twice the concentrations of the products</label>
+                <input type="radio" name="equilibrium" value="none"><label class="wrong">None of the above</label> <br><br>
+            </div>
+
         </form>
+        <button id="check" class="btn btn-info">Check Answers</button> <br><br>
     </div>
 </body>
 
