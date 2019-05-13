@@ -15,9 +15,3 @@ AP exams are stressful times with many topics to review. This website will take 
 * big-idea-5.html - contains all the html, jQuery, and bootstrap for the content relating to Big Idea 5 in AP Chemistry.
 * big-idea-6.html - contains all the html, jQuery, and bootstrap for the content relating to Big Idea 6 in AP Chemistry.
 * style.css - contains all the css for the main/front page
-* style.1.css- contains all the css for big-idea-1.html
-* style.2.css- contains all the css for big-idea-2.html
-* style.3.css- contains all the css for big-idea-3.html
-* style.4.css- contains all the css for big-idea-4.html
-* style.5.css- contains all the css for big-idea-5.html
-* style.6.css- contains all the css for big-idea-6.html
