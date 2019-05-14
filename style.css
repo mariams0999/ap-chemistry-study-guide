@@ -88,6 +88,10 @@ h3 {
     h3, .text-center {
         font-size: 35px;
     }
+    
+    ul {
+        font-size: 20px;
+    }
 }
 
 /*lg*/
@@ -102,6 +106,11 @@ h3 {
     
     h3, .text-center {
         font-size: 40px;
+    }
+    
+    ul {
+        font-size: 25px;
+        padding-left: 100px;
     }
 }
 
